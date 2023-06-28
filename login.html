@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/Jobs.png">
+</head>
+<body>
+    <header>
+        <!-- Header Start -->
+          <div class="Header-area">
+            <div class="Header-img">
+                <a href="index.html">
+                    <img src="https://themewagon.github.io/jobfinderportal/assets/img/logo/logo.png" alt="logo" class="img1">
+                </a>
+            </div>
+            <div class="Header-list">
+                <div class="Header-list_list,grid">
+                    <ul class="navigation">
+                        <li class="list1"><a href="index.html">Trang chủ</a></li>
+                        <li class="list1"><a href="searchjob.html">Tìm việc làm</a></li>
+                        <li class="list1"><a href="about.html">Về</a></li>
+                        <li class="list4"><a href="#">Trang</a>
+                            <ul  class="submenu">
+                                <li><a href="Blog.html">Blog</a></li>
+                                <li><a href="Blog detail.html">Chi tiết Blog</a></li>
+                                <li><a href="#">Yếu tố</a></li>
+                                <li><a href="job details.html">Chi tiết công việc</a></li>
+                            </ul>
+                        </li>
+                        <li class="list1"><a href="index.html#footer">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="Header-list_button">
+                    <a href="register.php" class="button1">Đăng ký</a>
+                    <a href="login.html" class="button2">Đăng nhập</a>
+
+                </div>
+            </div>
+          </div>
+        <!-- Header End -->
+ </header>
+ <main>
+    <div class="login">
+        <h1 class="login_h1">
+            Đăng nhập
+        </h1>
+    </div>
+    <div class="login_form">
+        <form action="login.php" method="post">
+            <label for="username" class="login_lable">
+              Tên đăng nhập
+            </label>
+            <br>
+            <br>
+            <input type="text" name="username" id="username" placeholder="&nbsp;Tên đăng nhập" style="font-size: 15px;">
+            <br>
+            <br>
+            <br>
+            <label for="password" class="login_lable">
+               Mật khẩu
+            </label>
+            <br>
+            <br>
+            <input type="password" name="password" id="password" placeholder="&nbsp;Mật khẩu" style="font-size: 15px;">
+            <br>
+            <br>
+            <a href="forgot password.html#forgot_password" style="font-size: 15px;">Quên mật khẩu?</a>
+            <br><br><br><br><br>
+            <input type="submit" name="btn_login" id="btn_login" class="btn_login" value="Đăng nhập">
+       </form>
+    </div>
+ </main>
+ <footer class="footer_login">
+   <ul class="footer_list">
+    <li><a href="introduce.html">Giới thiệu</a></li>
+    <li><a href="introduce.html#question-list">Những câu hỏi thường gặp</a></li>
+    <li><a href="">Điều khoản và thỏa thuận sử dụng</a></li>
+    <li><a href="">Chính sách bảo mật</a></li>
+   </ul>
+   <p style="color: black;text-align: center;font-size: 20px;margin-top: 30px;">@JobFlnder.vn.com</p>
+ </footer>
+</body>
+</html>

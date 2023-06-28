@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ Job Flnder</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/Jobs.png">
+</head>
+<body>
+    <header>
+        <!-- Header Start -->
+          <div class="Header-area">
+            <div class="Header-img">
+                <a href="index.html">
+                    <img src="https://themewagon.github.io/jobfinderportal/assets/img/logo/logo.png" alt="logo" class="img1">
+                </a>
+            </div>
+            <div class="Header-list">
+                <div class="Header-list_list,grid">
+                    <ul class="navigation">
+                        <li class="list1"><a href="index.html">Trang chủ</a></li>
+                        <li class="list1"><a href="searchjob.html">Tìm việc làm</a></li>
+                        <li class="list1"><a href="about.html">Về</a></li>
+                        <li class="list4"><a href="#">Trang</a>
+                            <ul  class="submenu">
+                                <li><a href="Blog.html">Blog</a></li>
+                                <li><a href="Blog detail.html">Chi tiết Blog</a></li>
+                                <li><a href="#">Yếu tố</a></li>
+                                <li><a href="job details.html">Chi tiết công việc</a></li>
+                            </ul>
+                        
+                        </li>
+                        <li class="list1"><a href="index.html#footer">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="Header-list_button">
+                    <a href="register.php" class="button1">Đăng ký</a>
+                    <a href="login.html" class="button2">Đăng nhập</a>
+
+                </div>
+            </div>
+          </div>
+        <!-- Header End -->
+ </header>
+ <main>
+    <img id="imganhchinh" onclick="chaneimage()"  src="https://themewagon.github.io/jobfinderportal/assets/img/hero/h1_hero.jpg" alt="" width="100%" height="600px" style="margin-top: 70px;background-attachment: fixed;">
+    <script>
+   var index = 1 ;
+    function chaneimage(){
+        var imgs = [ "https://themewagon.github.io/jobfinderportal/assets/img/hero/h1_hero.jpg","img/abc2.jpg","img/abc3.jpg"]  ; 
+        document.getElementById('imganhchinh').src = imgs[index] ;
+         index++ ;
+        if(index == 3) {
+             index = 0 ;
+          }
+    }
+    setInterval(chaneimage,2500) ; 
+
+    </script>
+    
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="hero__caption">
+                <h1>Tìm công việc cho bản thân</h1>
+            </div>
+            <div class="row_input">
+                <form action="#" class="search-box">
+                    <div class="input-form">
+                        <input id="search-input" type="text" placeholder="&nbsp;Tên công việc hoặc từ khóa" tabindex="0" class="input_1">
+                    </div>
+                    <div class="select-form">
+                        <select name="select" id="select" >
+                            <option value="">&nbspHồ Chí Minh</option>
+                            <option value="">&nbspĐà Nẵng</option>
+                            <option value="">&nbspHà Nội</option>
+                        </select>
+                    </div>
+                    <div class="search-form">
+                        <button onclick="searchProduct()" class="btn_search" type="submit" value="submit"> <a href="#" style="color: white; font-weight: bold;">Tìm việc</a></button>
+                     </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="heading_2">
+        <h1 class="heading_2-h1">
+            Một số công việc nổi bật
+        </h1>
+    </div>
+    <div class="table_job">
+        <table class="job-table">
+            <tr class="job-column">
+                <td class="job-img">
+                    <img src="https://salt.topdev.vn/4RwVhPwnpI0Vxou5IkSvdC-uGsigSLf8NxPkp7XVTQQ/fit/170/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIyLzAzLzExL1RvcERldi1HbG9iYWxUZWNoLUxvZ28tMTY0Njk4NDQ5NS5wbmc/topdev-globaltech-logo-1646984495.jpg" alt="">
+                </td>
+                <td>
+                    <h3 class="job_text"><a href="job_details_1.html" style="color: black;">Chuyên viên DevSecOps - DevSecOps Engineer (Middle/Senior)</a></h3>
+                    <p class="job-text">GlobalTech</p>
+                    <div class="local_setting">
+                        <p class="job_local"><i class="fa-solid fa-location-dot fa-2xs"></i>&nbsp;Quận Tân Bình, Hồ Chí Minh</p>
+                        <p class="job_setting"><i class="fa-solid fa-gear fa-2xs"></i>&nbsp;Phần Mềm</p>
+                        <a href="login.html" class="job_logtin">Đăng nhập để xem mức lương</i></a>
+                    </div>
+                    <ul class="job_job">
+                        <li class="job_list">DevOps</li>
+                        <li class="job_list">Docker</li>
+                        <li class="job_list">System Engineer</li>
+                        <li class="job_list">Security Engineer</li>
+                        <li class="job_list">System Security</li>
+                    </ul>
+                </td>
+            </tr>
+                <tr class="job-column">
+                    <td class="job-img">
+                        <img src="https://salt.topdev.vn/nrgb17S_JBbi-pyTOf1SMd4iCGHcU4pb4e3bKPgAafM/fit/170/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIyLzA4LzI0L1RvcERldi1XYXZlei1Mb2dvLTE2NjEzMjU4MDkucG5n/topdev-wavez-logo-1661325809.jpg" alt="">
+                    </td>
+                    <td>
+                        <h3 class="job_text"><a href="" style="color: black;">Game Developer (C#, Unity, Unity2D)</a></h3>
+                        <p class="job-text">Wavez</p>
+                        <div class="local_setting">
+                            <p class="job_local"><i class="fa-solid fa-location-dot fa-2xs"></i>&nbsp;Quận Nam Từ Liêm, Hà Nội</p>
+                            <p class="job_setting"><i class="fa-solid fa-gear fa-2xs"></i>&nbsp;Giải trí/ Game</p>
+                            <a href="login.html" class="job_logtin">Đăng nhập để xem mức lương</i></a>
+                        </div>
+                        <ul class="job_job">
+                            <li class="job_list">Unity</li>
+                            <li class="job_list">C#</li>
+                            <li class="job_list">Game</li>
+                            <li class="job_list">Game Mobile</li>
+                            <li class="job_list">Unity2D</li>
+                        </ul>
+                    </td>
+              </tr>
+            <tr class="job-column">
+                <td class="job-img">
+                    <img src="https://salt.topdev.vn/hqmcA7pNq696a18BgR7q1IWg6ZqLqUV7Nh2CRGFYN1s/fit/170/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIxLzA5LzE1L1RvcERldi0tLS0xNjMxNjg4Nzc3LnBuZw/topdev-1631688777.jpg" alt="">
+                </td>
+                <td>
+                    <h3 class="job_text"><a href="" style="color: black;">Frontend Developer (ReactJS/NextJS)</a></h3>
+                    <p class="job-text">DAMDA CO., LTD</p>
+                    <div class="local_setting1">
+                        <p class="job_local"><i class="fa-solid fa-location-dot fa-2xs"></i>&nbsp;Quận Thanh Xuân, Hà Nội</p>
+                        <p class="job_setting"><i class="fa-solid fa-gear fa-2xs"></i>&nbsp;E-commerce Platforms</p>
+                        <a href="login.html" class="job_logtin">Đăng nhập để xem mức lương</i></a>
+                    </div>
+                    <ul class="job_job">
+                        <li class="job_list">HTML5</li>
+                        <li class="job_list">JavaScript</li>
+                        <li class="job_list">JQuery</li>
+                        <li class="job_list">REST API</li>
+                        <li class="job_list">Front-End</li>
+                        <li class="job_list">ReactJS</li>
+                        <li class="job_list">CSS3</li>
+                        <li class="job_list">Front-End</li>
+                    </ul>
+                </td>
+            </tr>
+        </tr>
+        <tr class="job-column">
+            <td class="job-img">
+                <img src="https://salt.topdev.vn/ujoYOdrrdwyqUJnM6dTZvzq2JQNPG1FBRNZJG4KQsis/fit/170/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIxLzExLzA1L1RvcERldi1RSVNvZnQtRG5nTmd1eW5UaFRoeS0xNjM2MDc0MDQ5LnBuZw/topdev-qisoft-dngnguynththy-1636074049.jpg" alt="">
+            </td>
+            <td>
+                <h3 class="job_text"><a href="" style="color: black;">Lập trình viên Mobile (Android/ iOS)</a></h3>
+                <p class="job-text">Công ty Cổ Phần Công nghệ Quảng Ích</p>
+                <div class="local_setting2">
+                    <p class="job_local"><i class="fa-solid fa-location-dot fa-2xs"></i>&nbsp;Quận Hoàng Mai, Hà Nội - Quận Cầu Giấy, Hà Nội</p>
+                    <p class="job_setting"><i class="fa-solid fa-gear fa-2xs"></i>&nbsp;Software, Phần Mềm, Giáo dục, Triển Khai Phần Mềm</p>
+                    <a href="login.html" class="job_logtin">Đăng nhập để xem mức lương</i></a>
+                </div>
+                <ul class="job_job">
+                    <li class="job_list">Swift</li>
+                    <li class="job_list">Android</li>
+                    <li class="job_list">IOS</li>
+                    <li class="job_list">Java</li>
+                    <li class="job_list">Mobile</li>
+                </ul>
+            </td>
+      </tr>
+    </tr>
+    <tr class="job-column">
+        <td class="job-img">
+            <img src="https://salt.topdev.vn/bJWnDlKYYfvA7_yHPMjmHdVWvWMa4NckYF8-NxpZbE0/fit/170/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIzLzAyLzIyL1RvcERldi1TY3JlZW5zaG90XzE3LTE2NzcwNTU4ODAucG5n/topdev-screenshot-17-1677055880.jpg" alt="">
+        </td>
+        <td>
+            <h3 class="job_text"><a href="" style="color: black;">FullStack Developer</a></h3>
+            <p class="job-text">TROPIC CAPITAL</p>
+            <div class="local_setting">
+                <p class="job_local"><i class="fa-solid fa-location-dot fa-2xs"></i>&nbsp; Quận 3, Hồ Chí Minh</p>
+                <p class="job_setting"><i class="fa-solid fa-gear fa-2xs"></i>&nbsp;Phần Mềm</p>
+                <a href="login.html" class="job_logtin">Đăng nhập để xem mức lương</i></a>
+            </div>
+            <ul class="job_job">
+                <li class="job_list">PHP</li>
+                <li class="job_list">MySQL</li>
+                <li class="job_list">Full-Stack</li>
+                <li class="job_list">HTML & CSS</li>
+                <li class="job_list">VueJS</li>
+            </ul>
+        </td>
+    </tr>
+    <tr class="job-column">
+        <td class="job-img">
+            <img src="https://salt.topdev.vn/bJWnDlKYYfvA7_yHPMjmHdVWvWMa4NckYF8-NxpZbE0/fit/170/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIzLzAyLzIyL1RvcERldi1TY3JlZW5zaG90XzE3LTE2NzcwNTU4ODAucG5n/topdev-screenshot-17-1677055880.jpg" alt="">
+        </td>
+        <td>
+            <h3 class="job_text"><a href="" style="color: black;">FullStack Developer</a></h3>
+            <p class="job-text">Operations Engineer</p>
+            <div class="local_setting">
+                <p class="job_local"><i class="fa-solid fa-location-dot fa-2xs"></i>&nbsp; Quận 3, Hồ Chí Minh</p>
+                <p class="job_setting"><i class="fa-solid fa-gear fa-2xs"></i>&nbsp;Phần Mềm</p>
+                <a href="login.html" class="job_logtin">Đăng nhập để xem mức lương</i></a>
+            </div>
+            <ul class="job_job">
+                <li class="job_list">Linux</li>
+                <li class="job_list">MySQL</li>
+                <li class="job_list">Python</li>
+                <li class="job_list">TCP/IP</li>
+                <li class="job_list">IT Operations</li>
+                <li class="job_list">Product Operation</li>
+                <li class="job_list">Data Operation</li>
+                <li class="job_list">Shell</li>
+            </ul>
+        </td>
+    </tr>
+    <tr class="job-column">
+        <td class="job-img">
+            <img src="https://salt.topdev.vn/b2B-g9BKcs1CEPzG87WkBUoCHnafqMbz_bRpXpukOPI/fit/170/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzEyLzI5L2xvZ295b2R5bmdhbmdwbmctVFVZTkROR1lPRFktcDRrWTAucG5n/logoyodyngangpng-tuyndngyody-p4ky0.jpg" alt="">
+        </td>
+        <td>
+            <h3 class="job_text"><a href="" style="color: black;">Backend Developer (Java, Spring)</a></h3>
+            <p class="job-text">YODY Fashion</p>
+            <div class="local_setting2">
+                <p class="job_local"><i class="fa-solid fa-location-dot fa-2xs"></i>&nbsp; Thành phố Hải Dương, Hải Dương - Quận Thanh Xuân, Hà Nội</p>
+                <p class="job_setting"><i class="fa-solid fa-gear fa-2xs"></i>&nbsp;Product, Thương mại điện tử/ Bán lẻ, Mạng xã hội thời trang</p>
+                <a href="login.html" class="job_logtin">Đăng nhập để xem mức lương</i></a>
+            </div>
+            <ul class="job_job">
+                <li class="job_list">Java</li>
+                <li class="job_list">Back-End</li>
+                <li class="job_list">Spring</li>
+                <li class="job_list">Spring Boot</li>
+            </ul>
+        </td>
+    </tr>
+    <tr class="job-column">
+        <td class="job-img">
+            <img src="https://salt.topdev.vn/DY2LbsunjzIlacr74sHQ-NICLtFiJnuFp0k25Bt_qJ0/fit/170/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzAzL21MLTRPUmVhLmpwZw/ml-4orea.jpg" alt="">
+        </td>
+        <td>
+            <h3 class="job_text"><a href="" style="color: black;">Winform Developer</a></h3>
+            <p class="job-text">Gốm sứ Minh Long</p>
+            <div class="local_setting2">
+                <p class="job_local"><i class="fa-solid fa-location-dot fa-2xs"></i>&nbsp;Quận 3, Hồ Chí Minh - Thị xã Thuận An, Bình Dương</p>
+                <p class="job_setting"><i class="fa-solid fa-gear fa-2xs"></i>&nbsp;Bán lẻ</p>
+                <a href="login.html" class="job_logtin">Đăng nhập để xem mức lương</i></a>
+            </div>
+            <ul class="job_job">
+                <li class="job_list">C#</li>
+                <li class="job_list">SQL</li>
+                <li class="job_list">VB.NET</li>
+                <li class="job_list">Winform</li>
+                <li class="job_list">ASP.NET MVC</li>
+                <li class="job_list">.NET Core</li>
+            </ul>
+        </td>
+    </tr>
+    <tr class="job-column">
+        <td class="job-img">
+            <img src="https://salt.topdev.vn/XkUwH19fUdW_-jDJwxN1Wj1eIKoWjx90gtGsRZhn76U/fit/170/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIzLzAyLzI3L1RvcERldi1EaWtzaGF0ZWstTG9nby0xNjc3NDg1MTcyLnBuZw/topdev-dikshatek-logo-1677485172.jpg" alt="">
+        </td>
+        <td>
+            <h3 class="job_text"><a href="" style="color: black;">Full-stack Engineer (.NET, C#, ASP.NET, JavaScript/ TypeScript)</a></h3>
+            <p class="job-text">Dikshatek</p>
+            <div class="local_setting">
+                <p class="job_local"><i class="fa-solid fa-location-dot fa-2xs"></i>&nbsp;Quận 3, Hồ Chí Minh</p>
+                <p class="job_setting"><i class="fa-solid fa-gear fa-2xs"></i>&nbsp;Human Resource</p>
+                <a href="login.html" class="job_logtin">Đăng nhập để xem mức lương</i></a>
+            </div>
+            <ul class="job_job">
+                <li class="job_list">ASP.NET</li>
+                <li class="job_list">JavaScript</li>
+                <li class="job_list">C#</li>
+                <li class="job_list">.NET</li>
+                <li class="job_list">Full-Stack</li>
+                <li class="job_list">TypeScript</li>
+            </ul>
+        </td>
+    </tr>
+    <tr class="job-column">
+        <td class="job-img">
+            <img src="https://salt.topdev.vn/p7pLwcbYgrUO3TbYSDKInSeVgNZCpR1PhNzTNoIjVmU/fit/170/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzLzIwMjIvMTAvMjAvVG9wRGV2LTMxMDgxNDM3MzgxODc1ODI4NjIxNjQ0MjQwODkzMjUxODMxNjg0MTQyOTluLUxpbGlhbkxlLTE2NjYyNjAzNTcucG5n/topdev-3108143738187582862164424089325183168414299n-lilianle-1666260357.jpg" alt="">
+        </td>
+        <td>
+            <h3 class="job_text"><a href="" style="color: black;">Lập trình viên Odoo (Làm việc ngay ở HCM)</a></h3>
+            <p class="job-text">Trung Tâm Nội Soi & Chẩn Đoán Bệnh Lý Tiêu Hóa Doctor Check</p>
+            <div class="local_setting">
+                <p class="job_local"><i class="fa-solid fa-location-dot fa-2xs"></i>&nbsp;Quận 10, Hồ Chí Minh</p>
+                <p class="job_setting"><i class="fa-solid fa-gear fa-2xs"></i>&nbsp;Sức khỏe/ Làm đẹp</p>
+                <a href="login.html" class="job_logtin">Đăng nhập để xem mức lương</i></a>
+            </div>
+            <ul class="job_job">
+                <li class="job_list">Odoo</li>
+                <li class="job_list">Restful Api</li>
+                <li class="job_list">API</li>
+                <li class="job_list">PostgreSql</li>
+            </ul>
+        </td>
+    </tr>
+        </table>
+    </div>
+ </main>
+ <footer style="display: block;">
+    <div class="Footer" id="footer">
+        <div class="footer_layout">
+            <div class="footer_about">
+                <h1 class="footer_h1">
+                    Về chúng tôi
+                </h1>
+                <p class="footer_text" style="line-height: 20px;">
+                    Chúng tôi mang đến một trang website giải quyết vấn đề tìm kiếm việc làm một cách nhanh nhất!
+                </p>
+            </div>
+            <div class="footer_info">
+                <h1 class="footer_h1">
+                    Thông tin liên lạc
+                </h1>
+                <ul class="footer_ul">
+                    <li style="line-height: 20px;">Địa chỉ: Ngũ Hàng Sơn, Đà Nẵng.</li>
+                    <br>
+                    <li>Điện thoại: 0123456789</li>
+                    <br>
+                    <li>Email:info@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer_link">
+                <h1 class="footer_h1">
+                    Nhận thông tin về chúng tôi
+                </h1>
+                <form action="">
+                    <input type="email" name="footer_email" id="footer_email">
+                    <br>
+                    <input type="submit" name="footer_email" class="button_email" value="">
+                    <i class="fa-solid fa-paper-plane" style="color: #ffffff; margin-left: 425px;margin-top: -34px;position: absolute;font-size: 20px;"></i>   
+                </form>
+            </div>
+        </div>
+        <div class="footer_1">
+            <ul class="footer_1-list">
+                <li>
+                    <img src="img/logo2_footer.png" alt="logo2" style="margin-top: -10px;width: 100%;height: auto;">
+                </li>
+                <li>
+                    5000+ Công việc
+                </li>
+                <li>
+                    500+ Doanh nghiệp/Công ty
+                </li>
+                <li>
+                    455+ Người có việc làm
+                </li>
+            </ul>
+        </div>
+        <hr width="1450px" style="color: #333; margin-top: 150px;">
+        <div class="footer_2">
+            <ul class="footer_2-list">
+                <li>
+                    Copyright ©2023 All rights reserved | This template is made with  <i class="fa-solid fa-globe fa-xl" style="color: red;"></i> by <font style="color: red;">Job Flnder</font>
+                </li>
+                <li>
+                    <i class="fa-brands fa-facebook fa-2xl"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-twitter fa-2xl"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-google fa-2xl"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-github fa-2xl"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+ </footer>
+ <script>
+    function searchProduct() {
+    var input = document.getElementById("search-input").value.toLowerCase();
+    var productTitles = document.querySelectorAll(".job_text a");
+    
+    for (var i = 0; i < productTitles.length; i++) {
+        var title = productTitles[i].innerText.toLowerCase();
+        var parentDiv = productTitles[i].closest(".job-column");
+        
+        if (title.includes(input)) {
+            parentDiv.style.display = "block";
+        } else {
+            parentDiv.style.display = "none";
+        }
+    }
+}
+ </script>
+</body>
+</html>
